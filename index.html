@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music credit Api</title>
+    <script src="searching.js"></script>
+
+</head>
+<body onload="onPageLoad()">
+    <h1>Music Credit Searcher</h1>
+    <button onclick="requestAuthoatization()">Login</button>
+    <form action='javascript:void(0);'>
+        <label for="artist">Name</label>
+        <input type="text" id="artistname" name="artist">
+        <select id="role" name="role">
+            <option value="Mixed by">Mixed by</option>
+            <option value="Producer">Producer</option>
+        </select>
+        <button onclick="searchArtist()">search</button>
+    </form>
+
+
+    <h1 id="artistName"></h1>
+    <img id="artistPicture"></img>
+    <h2 id="release"></h2>
+    <iframe id="youtubelink" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script src="app.js"> </script>
+</body>
+</html>
